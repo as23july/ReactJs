@@ -9,7 +9,7 @@ export default function Navbar(props) {
     return (
         <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
             <div className="container-fluid">
-                <a className="navbar-brand" to="/">
+                <a className="navbar-brand" href="/">
                     {/* <img src="src\images\my.jpg" width="30" height="30" className="d-inline-block align-top" alt=""/> */}
                     {props.firstcolumn}
                 </a>
@@ -19,13 +19,13 @@ export default function Navbar(props) {
                 <div className="collapse navbar-collapse" id="navbarText">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                        <a className="nav-link active" aria-current="page" to="/">Home</a>
+                        <a className="nav-link active" aria-current="page" href="/">Home</a>
                         </li>
                         <li className="nav-item">
                         <a className="nav-link" href="#">{props.secondcolumn}</a>
                         </li>
                         <li className="nav-item">
-                        <a className="nav-link" to="/about">{props.thirdcolumn}</a>
+                        <a className="nav-link" href="/about">{props.thirdcolumn}</a>
                         </li>
                     </ul>
                     <span className="navbar-text">
